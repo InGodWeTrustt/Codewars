@@ -10,4 +10,34 @@
 
 body{
     background-color: var(--color-primary);
+    font-size: 24px;
+    color: white;
+}
+
+/* все p элементы*/
+p{
+    width: 200px;
+}
+
+/* Все p элементы с class="highlight"*/
+p.highlight{
+    background-color: aqua;
+    font-style: italic;
+    font-size: 30px;
+}
+
+/* Имеет class="highlight mainpoint*/
+.highlight.mainpoint{
+    color: red;
+    background-color: black;
+}
+
+/* любые элементы article, которые являютсЯ прямым потомком section*/
+section > article {
+    font-style: 24px;
+    color: green;
+}
+
+section li{
+    color:green;
 }
