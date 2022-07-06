@@ -41,3 +41,8 @@ section > article {
 section li{
     color:green;
 }
+
+
+section li:nth-child(3){
+    font-size: 40px;
+}
