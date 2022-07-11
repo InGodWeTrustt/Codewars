@@ -1,48 +1,64 @@
-:root{
-    --color-primary: #218bff;
+:root {
+    --color-primary: #e6e9ed;
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: var(--color-primary);
     font-size: 24px;
     color: white;
+    text-align: center;
+}
+
+.first{
+    width: 100vw;
+    margin: 0 auto 20px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.first h1 {
+    font-weight: 500; /* вес шрифта - 500 (среднее между bold и normal)*/
+    text-transform: uppercase; /* перевести все сиволы в верхний регистр*/
+    color:white;
 }
 
 /* все p элементы*/
-p{
+p {
     width: 200px;
 }
 
 /* Все p элементы с class="highlight"*/
-p.highlight{
+p.highlight {
     background-color: aqua;
     font-style: italic;
     font-size: 30px;
 }
 
 /* Имеет class="highlight mainpoint*/
-.highlight.mainpoint{
+.highlight.mainpoint {
     color: red;
     background-color: black;
 }
 
 /* любые элементы article, которые являютсЯ прямым потомком section*/
-section > article {
+section>article {
     font-style: 24px;
     color: green;
 }
 
-section li{
-    color:green;
+section li {
+    color: green;
 }
 
 
-section li:nth-child(3){
+section li:nth-child(3):hover {
     font-size: 40px;
+    cursor: pointer;
 }
