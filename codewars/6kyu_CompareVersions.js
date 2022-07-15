@@ -18,8 +18,8 @@ function compareVersions(v1, v2) {
 }
 
 console.log(compareVersions('124.69.43.6.167', '124.69.136.2')) //false
-// console.log(compareVersions('5.144.3.164', '5.144.90.1')) //false
-// console.log(compareVersions('10.9', '10.10')); //false
-// console.log(compareVersions("10.4.6", "10.4")); // true
-// console.log(compareVersions("10.4.9", "10.4.6")); // true
-// console.log(compareVersions("10.4", "11")); // false
+console.log(compareVersions('5.144.3.164', '5.144.90.1')) //false
+console.log(compareVersions('10.9', '10.10')); //false
+console.log(compareVersions("10.4.6", "10.4")); // true
+console.log(compareVersions("10.4.9", "10.4.6")); // true
+console.log(compareVersions("10.4", "11")); // false
