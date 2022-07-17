@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test_m": "mocha",
+    "test_m": "mocha introTest.js ",
     "test_c": "chai"
   },
   "devDependencies": {
