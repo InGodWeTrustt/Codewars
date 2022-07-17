@@ -10,3 +10,5 @@ git merge <имя ветки> - соединить ветку с данной
 git pull - обновить
 git push origin --delete <имя ветки> - удаляем ветку удаленно
 git rm --cached <path_to_file> - удаляем файл удаленно в репозитории, но сохраняем локально
+git remote -v - узнать адрес репозитория
+get remote set-url origin <url> - установить новый url
