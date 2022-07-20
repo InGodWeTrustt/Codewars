@@ -23,4 +23,4 @@ const moveFiles = (from,  to) =>{
     })
 }
 
-// moveFiles(__dirname, defFolder)
+moveFiles(defFolder, defFolder)
