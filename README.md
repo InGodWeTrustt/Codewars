@@ -1,2 +1,2 @@
 # Codewars
-Coursera test repository
+Тестовый репозиторий по решению задачек с сайта "Codewars"
