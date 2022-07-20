@@ -7,8 +7,8 @@ const createDir = (path, name) => {
     fs.mkdirSync(join(path, `${name}`))
 }
 
-// for (let i = 1; i <= 7; i++) {
-//     createDir(defaultFolder, `${i} kyu`)
+// for (let i = 1; i <= 4; i++) {
+//     createDir(defFolder, `${i} kyu`)
 // }
 
 const moveFiles = (from,  to) =>{
@@ -23,4 +23,4 @@ const moveFiles = (from,  to) =>{
     })
 }
 
-moveFiles(__dirname, defFolder)
+// moveFiles(__dirname, defFolder)
