@@ -1,8 +1,7 @@
-const { create } = require('domain')
 const fs = require('fs')
 const { join } = require('path')
 
-const defaultFolder = join(__dirname, 'codewars-Solutions')
+const defFolder = join(__dirname, 'codewars-Solutions')
 
 const createDir = (path, name) => {
     fs.mkdirSync(join(path, `${name}`))
@@ -12,12 +11,16 @@ const createDir = (path, name) => {
 //     createDir(defaultFolder, `${i} kyu`)
 // }
 
-fs.readdirSync(defaultFolder).forEach( element => {
-    const dirContent = defaultFolder + '\\'+ element
-    if(fs.statSync(dirContent).isFile()){
-        const numberKyu = element.match(/(?<num>\d+)(\s?|_)kyu/);
-        if(numberKyu){
-            fs.rename(join(defaultFolder, element), join(defaultFolder, `${numberKyu.groups['num']} kyu`, element), ()=>{})
+const moveFiles = (from,  to) =>{
+    fs.readdirSync(from).forEach( element => {
+        const dirContent = from + '\\'+ element
+        if(fs.statSync(dirContent).isFile()){
+            const numberKyu = element.match(/(?<num>\d+)(\s?|_)kyu/);
+            if(numberKyu){
+                fs.rename(join(from, element), join(to, `${numberKyu.groups['num']} kyu`, element), ()=>{})
+            }
         }
-    }
-})
+    })
+}
+
+moveFiles(__dirname, defFolder)
