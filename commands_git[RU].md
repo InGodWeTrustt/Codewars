@@ -10,8 +10,10 @@ git branch -D <name> - удалить ветку по определенному
 git merge <имя ветки> - соединить ветку с данной
 git pull - забираем все изменения из удал. репо. и пытаемся слить их с текущей веткой
 git push - передача изменений в репозиторий
-git push origin --delete <имя ветки> - удаляем ветку удаленно
+git push origin --delete <имя ветки> - удаляем ветку в удаленном репозитории
 git rm --cached <path_to_file> - удаляем файл удаленно в репозитории, но сохраняем локально
-git remote -v - узнать адрес репозитория
-git remote set-url origin <url> - установить новый url
+git remote -v - проверяем удаленные репозитории
+git remote set-url origin <url> - изменить существующий url адрес удаленного репозитория
+git remote add <имя> <url> (git remote add origin "https://github.com/IngodWeTrustt/Codewars.git") - добаляем новый удаленный репозиторий по имени
+
 ```
