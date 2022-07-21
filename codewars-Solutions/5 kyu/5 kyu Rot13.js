@@ -46,3 +46,10 @@ console.log(rot13('test')); // grfg
 console.log(rot13('Test')); // Grfg
 console.log(rot13('Ruby is cool!')); // Ehol-vf-pbby.
 console.log(rot13('MD`K|xhf#CQoU0k')); // 
+
+
+function rot13(message) {
+    var a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    var b = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+    return message.replace(/[a-z]/gi, c => b[a.indexOf(c)])
+  }
