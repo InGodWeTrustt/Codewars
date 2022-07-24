@@ -23,4 +23,4 @@ const moveFiles = (from,  to) =>{
     })
 }
 
-moveFiles(defFolder, defFolder)
+moveFiles(join(__dirname, 'test'), defFolder)
