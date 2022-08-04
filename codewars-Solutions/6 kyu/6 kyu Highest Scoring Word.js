@@ -14,6 +14,4 @@ function high(x){
     return split.sort((a, b) => b[1]-a[1])[0][0]
 }
 
-console.log();
-
 console.log(high('what time are we climbing up the volcano')); // volcano 
