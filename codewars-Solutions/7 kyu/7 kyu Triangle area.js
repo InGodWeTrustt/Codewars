@@ -9,7 +9,7 @@
 .      .       .      .      ---> should return 4.5
  */
 
-
+ 
 function tArea(tStr) {
     const triangle = tStr
     .split('\n')
