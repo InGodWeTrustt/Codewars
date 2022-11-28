@@ -2,11 +2,12 @@
   "name": "sol_codewars",
   "version": "1.0.1",
   "homepage": "",
+  "description": "Решаю задачки с сайта CodeWars",
   "main": "",
   "author": {
     "name": "Evgeny"
   },
-  "keywords": ["codewars"],
+  "keywords": ["codewars", "javascript"],
   "scripts": {
     "test_m": "mocha introTest.js ",
     "test_c": "chai",
