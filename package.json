@@ -11,7 +11,8 @@
   "scripts": {
     "test_m": "mocha introTest.js ",
     "test_c": "chai",
-    "git": "git add . && git commit -m \"update\" && git push",
+    "git": "git add . && git commit -m",
+    "postgit":"git push --all",
     "move": "node moveFilesInFolder.js"
   },
   "devDependencies": {
