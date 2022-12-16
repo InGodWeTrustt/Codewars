@@ -15,7 +15,7 @@
     // запускаем дочерний процесс
     const child = fork(join(__dirname, 'moveFilesInFolder.js'))
 
-    // Слушаем событие "message" и первым аргументов в коллбек-функцию будет попадать наше сообщение из дочернего процесса
+    // Слушаем событие "message" и первым аргументом в коллбек-функцию будет попадать наше сообщение из дочернего процесса
     child.on('message', msg => execSync(`npm run git -- "${msg}"`))
 
 **moveFilesInFolder.js**
@@ -23,7 +23,7 @@
     // Перемещаем файлы из папки *WORK_FOLDER* в *DEF_FOLDER*
     moveFiles(WORK_FOLDER, DEF_FOLDER);
 
-    // В переменную 'result' будет попадать сообщение для коммита
+    // В переменную 'result' будет присваиваться сообщение для коммита
     let result = Object.entries(map).map(([num, { count, named }], _, arr) => {
         if (arr.length === 1 && count === 1) {
             return `${num} kyu ${named[0]}.js`
