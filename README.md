@@ -6,6 +6,7 @@
     npm run git -- "Message of the commit"
 
 Автоматически закоммитить с указанием сообщения коммита:
+
     npm run deploy
 
 **index.js**
