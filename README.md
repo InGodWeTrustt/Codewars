@@ -16,7 +16,8 @@
     const child = fork(join(__dirname, 'moveFilesInFolder.js'))
 
     // Слушаем событие "message" и первым аргументом в коллбек-функцию 
-    будет попадать наше сообщение из дочернего процесса
+    // будет попадать наше сообщение из дочернего процесса
+    // Далее будет запускаться на исполнение наш npm scripts
     child.on('message', msg => execSync(`npm run git -- "${msg}"`))
 
 **moveFilesInFolder.js**
