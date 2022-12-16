@@ -16,7 +16,7 @@
     const child = fork(join(__dirname, 'moveFilesInFolder.js'))
     child.on('message', msg => execSync(`npm run git -- "${msg}"`))
 
-*moveFilesInFolder.js*
+**moveFilesInFolder.js**
 
     moveFiles(WORK_FOLDER, DEF_FOLDER);
     let result = Object.entries(map).map(([num, { count, named }], _, arr) => {
