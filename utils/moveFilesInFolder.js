@@ -21,13 +21,12 @@ const moveFiles = (from, to) => {
                 } else {
                     map[num] = { count: 1, named: [title] }
                 }
-                // fs.rename(join(from, element), join(to, `${num} kyu`, fileNameWithExt), () => {})
+                fs.rename(join(from, element), join(to, `${num} kyu`, fileNameWithExt), () => {})
             }
         }
     })
 }
 
-// moveFiles(WORK_FOLDER, DEF_FOLDER);
 
 moveFiles(WORK_FOLDER, DEF_FOLDER);
 
