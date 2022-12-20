@@ -8,7 +8,10 @@ const map = {}
 
 const moveFiles = (from, to) => {
     const fileNames = fs.readdirSync(from);
+
+    // if is empty dir, then return
     if (!fileNames.length) return;
+    
     fileNames.forEach(element => {
         const dirContent = from + '\\' + element;
 
