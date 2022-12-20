@@ -7,7 +7,9 @@ const createDir = (path, name) => fs.mkdirSync(join(path, `${name}`))
 const map = {}
 
 const moveFiles = (from, to) => {
-    fs.readdirSync(from).forEach(element => {
+    const fileNames = fs.readdirSync(from);
+    if (!fileNames.length) return;
+    fileNames.forEach(element => {
         const dirContent = from + '\\' + element;
 
         if (fs.statSync(dirContent).isFile()) {
@@ -21,7 +23,7 @@ const moveFiles = (from, to) => {
                 } else {
                     map[num] = { count: 1, named: [title] }
                 }
-                fs.rename(join(from, element), join(to, `${num} kyu`, fileNameWithExt), () => {})
+                fs.rename(join(from, element), join(to, `${num} kyu`, fileNameWithExt), () => { })
             }
         }
     })
@@ -40,4 +42,4 @@ let result = Object.entries(map).map(([num, { count, named }], _, arr) => {
 }).join(', ')
 
 
-process.send(result)
+process.send(result.length ? result : 'update')
