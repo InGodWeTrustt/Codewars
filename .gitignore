@@ -1,6 +1,6 @@
 /node_modules
 index.html
 styles.css
-test
-ignore
-commands_git[RU].md
+test/
+ignore/
+*.txt
