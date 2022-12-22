@@ -8,9 +8,9 @@ function genfib() {
         if(callFn > 1){
             fibSeq[fibSeq.length] = fibSeq[fibSeq.length-1] + fibSeq[fibSeq.length-2];
             callFn++;
-        } else [
+        } else {
             callFn++
-        ]
+        }
         return fibSeq[callFn-1]
     }
     return fib
