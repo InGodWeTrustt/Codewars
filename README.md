@@ -8,6 +8,7 @@
 
 **index.js**
 
+```js
     // импортируем необходимые модули
     const { join } = require('path')
     const { execSync, fork } = require('child_process')
@@ -19,9 +20,10 @@
     // будет попадать наше сообщение из дочернего процесса
     // Далее будет запускаться на исполнение наш npm scripts
     child.on('message', msg => execSync(`npm run git -- "${msg}"`))
-
+```
 **moveFilesInFolder.js**
 
+```js
     // Перемещаем файлы из папки *WORK_FOLDER* (в моем случае это папка "test", которая указана в 
     .gitignore и поэтому в этом репозитории не видна) в *DEF_FOLDER*
     moveFiles(WORK_FOLDER, DEF_FOLDER);
@@ -37,3 +39,4 @@
 
     // ДОЧЕРНИЙ ПРОЦЕСС (CHILD PROCESS) посылает сообщение
     process.send(result)
+```
