@@ -29,7 +29,7 @@ npm run deploy (1)
 
 ```js
     // Перемещаем файлы из папки *WORK_FOLDER* (в моем случае это папка "test", которая указана в 
-    .gitignore и поэтому в этом репозитории не видна) в *DEF_FOLDER*
+    //.gitignore и поэтому в этом репозитории не видна) в *DEF_FOLDER*
     moveFiles(WORK_FOLDER, DEF_FOLDER);
 
     // В переменную 'result' будет присваиваться сообщение для коммита
