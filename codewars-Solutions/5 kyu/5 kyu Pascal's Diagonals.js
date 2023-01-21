@@ -24,7 +24,7 @@ function generateDiagonal(n, l) {
     const res = [];
 
     for (let k = 0, diag = n; k < l; k++, diag++) {
-        const binomialcoeff = factorial(diag) / (factorial(k) * factorial(diag - k));
+        const binomialcoeff = Math.round(factorial(diag) / (factorial(k) * factorial(diag - k)));
         res.push(binomialcoeff);
     }
 
