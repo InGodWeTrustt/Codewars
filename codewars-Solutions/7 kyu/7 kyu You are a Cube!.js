@@ -13,7 +13,7 @@ function youAreACube(value) {
                ______
             3 /\  /
   Then, a = \/  \/
- * */ 
+ **/ 
 
 
 // Example
