@@ -11,8 +11,8 @@ function solveEq(eq) {
     
     
           |b1 a12 a13|           |a11 b1 a13|        |a11 a12 b1|
-     Δx = |b2 a22 a23|;     Δy = |a21 b2 a23|;  Δx = |a11 a22 b2|
-          |b3 a32 a33|           |a31 b3 a33|        |a11 a32 b3|
+     Δx = |b2 a22 a23|;     Δy = |a21 b2 a23|;  Δx = |a21 a22 b2|
+          |b3 a32 a33|           |a31 b3 a33|        |a31 a32 b3|
     
          Δx          Δy         Δz               
     x = --- ;   y = --- ;  z = --- ;
