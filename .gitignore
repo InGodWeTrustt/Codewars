@@ -1,6 +1,5 @@
 /node_modules
 test/
-ignore/
 *.txt
 *.html
 *.css
