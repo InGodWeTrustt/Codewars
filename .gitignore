@@ -1,5 +1,6 @@
 /node_modules
 test/
+готовое/
 *.txt
 *.html
 *.css
